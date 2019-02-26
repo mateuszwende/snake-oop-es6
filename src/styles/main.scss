@@ -1,0 +1,17 @@
+@import './header';
+
+// $background: #2B3A42;
+$background: #000;
+
+body {
+    background: $background;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    display: block;
+}
