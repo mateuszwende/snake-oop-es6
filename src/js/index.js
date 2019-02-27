@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import '../styles/main.scss';
 
 import { Game } from './modules/game';

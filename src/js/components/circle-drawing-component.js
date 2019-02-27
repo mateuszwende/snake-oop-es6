@@ -2,8 +2,7 @@ import { DrawingComponent } from '../lib/drawing-component';
 
 export class CircleDrawingComponent extends DrawingComponent {
     constructor(canvas) {
-        super(
-        );
+        super();
         
         this.ctx = canvas.element.getContext('2d');
         this.strokeColor = slot.color;

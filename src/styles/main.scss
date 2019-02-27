@@ -10,8 +10,55 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px; 
+    color: white; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 canvas {
     display: block;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 120px;
+    height: 120px;
+    font-size: 12px;
+
+    &__title {
+        color: pink;
+    }
+
+    &__block {
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin: 3px 0; 
+
+        &-left {
+            float: left;
+        }
+
+        &-right {
+            float: right;
+        }
+    }
+}
+
+.player-score {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 12px;
+}
+
+input {
+    color: pink;
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+    box-shadow: 0px -1px pink inset;
 }
