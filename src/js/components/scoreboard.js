@@ -12,7 +12,7 @@ export class Scoreboard extends DivComponent {
     init() {
         const p = document.createElement('p');
         p.classList.add('scoreboard__title');
-        p.innerHTML = this.title;
+        p.textContent = this.title;
         this.element.appendChild(p);
 
         this.players.sort((a, b) => b.score - a.score)
@@ -22,8 +22,8 @@ export class Scoreboard extends DivComponent {
                 const scoreBlockLeft = new DivComponent('scoreboard__block-left');
                 const scoreBlockRight = new DivComponent('scoreboard__block-right');
 
-                scoreBlockLeft.element.innerHTML = `${index + 1}. ${player.name}`;
-                scoreBlockRight.element.innerHTML = player.score;
+                scoreBlockLeft.element.textContent = `${index + 1}. ${player.name}`;
+                scoreBlockRight.element.textContent = player.score;
 
                 scoreBlock.element.appendChild(scoreBlockLeft.element);
                 scoreBlock.element.appendChild(scoreBlockRight.element);

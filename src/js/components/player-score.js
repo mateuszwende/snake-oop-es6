@@ -12,7 +12,7 @@ export class PlayerScore extends DivComponent {
     }
 
     update(score) {
-        this.element.innerHTML = `Score: ${score}`;
+        this.element.textContent = `Score: ${score}`;
     }
 
     increment() {
